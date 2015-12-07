@@ -1,86 +1,313 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<style type="text/css">
+<!DOCTYPE HTML>
 <!--
-body {
-	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background: #42413C;
-	margin: 0;
-	padding: 0;
-	color: #000;
-}
-
-/* ~~ Element/tag selectors ~~ */
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	padding: 0;
-	margin: 0;
-}
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
-}
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
-}
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
-a:link {
-	color: #42413C;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
-}
-a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
-}
-
-/* ~~ this fixed width container surrounds all other elements ~~ */
-.container {
-	width: 960px;
-	background: #FFF;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
-}
-
-/* ~~ This is the layout information. ~~ 
-
-1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-
-*/
-.content {
-
-	padding: 10px 0;
-}
-
-/* ~~ miscellaneous float/clear classes ~~ */
-.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
-	float: left;
-	margin-right: 8px;
-}
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
-	clear:both;
-	height:0;
-	font-size: 1px;
-	line-height: 0px;
-}
+	TXT by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-</style></head>
+<html>
+	<head>
+		<title>Hardpan Media Library @ GitHub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
 
-<body>
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+                        <!-- ED NOTE: link to media.hpantech.com -->
+							<h1><a href="index.html" id="logo">HML</a></h1>
+							<p>The Hardpan Media Library</p>
+						</div>
+					</div>
+				</header>
 
-<div class="container">
-  <div class="content">
-    <h1>Harpdpan Media Library (Early Site)</h1>
-    <p><strong>Hardpan Media Library</strong> - <a href="https://github.com/hpan-hml">Github Group</a></p>
-  </div>
-</div>
-</body>
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">Home</a></li>
+						<li>
+							<a href="#">Shortcuts</a>
+							<ul>
+								<li><a href="#">Lorem ipsum dolor</a></li>
+								<li><a href="#">Magna phasellus</a></li>
+								<li>
+									<a href="#">Phasellus consequat</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Phasellus consequat</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Veroeros feugiat</a></li>
+							</ul>
+						</li>
+                        <!-- ED. NOTE: TRIM PAGES TO REMOVE LEFT/RIGHT SIDEBAR 
+						<li><a href="left-sidebar.html">Left Sidebar</a></li>
+						<li><a href="right-sidebar.html">Right Sidebar</a></li>
+                        -->
+						<li><a href="no-sidebar.html">Blog</a></li>
+					</ul>
+				</nav>
+
+			<!-- Banner -->
+				<div id="banner-wrapper">
+					<section id="banner">
+						<h2>Hardpan Media Library @ GitHub</h2>
+						<p>Management Information for the Hardpan Media Library, Public GitHub Source Repositories</p>
+						<a href="#main" class="button">Jump On Into</a>
+					</section>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row 200%">
+							<div class="12u">
+
+								<!-- Highlight -->
+									<section class="box highlight">
+										<ul class="special">
+											<li><a href="#" class="icon fa-search"><span class="label">Magnifier</span></a></li>
+											<li><a href="#" class="icon fa-tablet"><span class="label">Tablet</span></a></li>
+											<li><a href="#" class="icon fa-flask"><span class="label">Flask</span></a></li>
+											<li><a href="#" class="icon fa-cog"><span class="label">Cog?</span></a></li>
+										</ul>
+										<header>
+											<h2>Software is Managed Here</h2>
+											<p>Independent Public Source Code Repositories of the Hardpan Media Library</p>
+										</header>
+										<p>You have arrived at the Public GitHub Groups Site for the Hardpan Media Library</p>
+                                        <p><strong>Status Notes:</strong> Updating web site</p>
+                                        <p><strong>Next Tasks:</strong> Designinig EC2 VMDK tooling for FreeBSD hosting at AWS</p>
+                                        <p><em>&ldquo;Welcome to the Hurricane, Butterfly&rdquo;</em> &ndash; Anon.</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row 200%">
+							<div class="12u">
+
+								<!-- Features -->
+									<section class="box features">
+										<h2 class="major"><span>Resources</span></h2>
+										<div>
+											<div class="row">
+												<div class="3u 12u(mobile)">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="https://github.com/hpan-hml/" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+															<h3><a href="https://github.com/hpan-hml/">Source Repositories</a></h3>
+															<p>It can to make Software go</p>
+														</section>
+
+												</div>
+												<div class="3u 12u(mobile)">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="http://hpan-hml.github.io/" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+															<h3><a href="http://hpan-hml.github.io/">Web Presence</a></h3>
+															<p>Communications @ New&nbsp;Media</p>
+														</section>
+
+												</div>
+												<div class="3u 12u(mobile)">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+															<h3><a href="#">Media Library Resources</a></h3>
+															<p>Big Sky, Small Shelf</p>
+														</section>
+
+												</div>
+												<div class="3u 12u(mobile)">
+
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+															<h3><a href="#">And One More</a></h3>
+															<p>Virgil and Dante walked into a bar...</p>
+														</section>
+
+												</div>
+											</div>
+											<div class="row">
+												<div class="12u">
+													<ul class="actions">
+														<li><a href="https://github.com/hpan-hml/" class="button big">Check the Source</a></li>
+														<li><a href="#" class="button alt big">View the 'Blog</a></li>
+                                                        <li><a href="http://astore.amazon.com/hml-gh-20/detail/B000HACU56" class="button alt big">Buy a Mug</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div class="row 200%">
+							<div class="12u">
+
+								<!-- Blog -->
+									<section class="box blog">
+										<h2 class="major"><span>Another Major Milestone for Independent Media</span></h2>
+										<div>
+											<div class="row">
+												<div class="9u 12u(mobile)">
+													<div class="content content-left">
+
+														<!-- Featured Post -->
+															<article class="box post">
+																<header>
+																	<h3><a href="#">Here's a really big heading</a></h3>
+																	<p>With a smaller subtitle that attempts to elaborate</p>
+																	<ul class="meta">
+																		<li class="icon fa-clock-o">15 minutes ago</li>
+																		<li class="icon fa-comments"><a href="#">8</a></li>
+																	</ul>
+																</header>
+																<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+																<p>
+																	Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in lectus. Praesent
+																	semper mod quis eget mi. Etiam sed ante risus aliquam erat et volutpat. Praesent a
+																	dapibus velit. Curabitur sed nisi nunc, accumsan vestibulum lectus. Lorem ipsum
+																	dolor sit non aliquet sed, tempor et dolor.  Praesent a dapibus velit. Curabitur
+																	accumsan.
+																</p>
+																<a href="#" class="button">Continue Reading</a>
+															</article>
+
+													</div>
+												</div>
+												<div class="3u 12u(mobile)">
+													<div class="sidebar">
+
+														<!-- Archives -->
+															<ul class="divided">
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">A Subheading</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock-o">6 hours ago</li>
+																			<li class="icon fa-comments"><a href="#">34</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">Another Subheading</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock-o">9 hours ago</li>
+																			<li class="icon fa-comments"><a href="#">27</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And Another</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock-o">Yesterday</li>
+																			<li class="icon fa-comments"><a href="#">184</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And Another</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock-o">2 days ago</li>
+																			<li class="icon fa-comments"><a href="#">286</a></li>
+																		</ul>
+																	</article>
+																</li>
+																<li>
+																	<article class="box post-summary">
+																		<h3><a href="#">And One More</a></h3>
+																		<ul class="meta">
+																			<li class="icon fa-clock-o">3 days ago</li>
+																			<li class="icon fa-comments"><a href="#">8,086</a></li>
+																		</ul>
+																	</article>
+																</li>
+															</ul>
+															<a href="#" class="button alt">Browse Archives</a>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer" class="container">
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- About -->
+								<section>
+									<h2 class="major"><span>What's this about?</span></h2>
+									<p>
+										This is <strong>TXT</strong>, yet another free responsive site template designed by
+										<a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
+										<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
+										whatever you're working on (personal or commercial), just be sure to give us credit for the design.
+										That's basically it :)
+									</p>
+								</section>
+
+						</div>
+					</div>
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Contact -->
+								<section>
+									<h2 class="major"><span>Get in touch</span></h2>
+									<ul class="contact">
+										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; 2015 Sean Champ. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
